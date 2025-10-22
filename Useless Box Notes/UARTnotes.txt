@@ -1,0 +1,4 @@
+To open a serial port in terminal:
+screen $(ls /dev/tty.usbmodem*) 115200
+
+Or just click the terminal button in the IDE

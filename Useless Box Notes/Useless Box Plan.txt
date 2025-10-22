@@ -1,0 +1,60 @@
+PLAN A: Useless box:
+
+Carve holes in side of box for: 
+	1. Battery on/off switch on the back
+	2. Useless box switch on the front
+	3. USB cable to power MCU on the side
+
+TODO FOR SHOEBOX PROTOTYPE:
+Trim motor parts (bottom stuff and half of swivel)
+ISR sets mvmt_request flag. Then, in while(1), 
+	if(mvmt_request):
+		delay(500 or 1000);
+		if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_8) == GPIO_PIN_SET)
+			movement_handler_function_lmao();
+		else mvmt_request = 0;
+
+TODO FOR REAL BOX
+Laser cut real box
+3D print box lifter and arm to turn off switch
+Get hinges for box lid
+Sauter switch wires
+Determine motor movements when switch flipped
+
+What's going in the box:
+Nucleo Board
+2 MG995 Motors
+6V 2000mAH NiMh battery
+Breadboard
+3D printed lid lifter attached to a motor
+3D printed curved arm attached to a motor
+Speaker
+Whole bunch of wires
+
+Peripherals:
+2 servos
+a switch
+RGB LED
+Speaker
+
+Box Component Measurements:
+Servo (x2): 1.85in length, 0.76in wide, 1.59 tall
+Speaker: 2.72in length, 1.20in wide, 0.63in tall
+Battery: 2.82in length, 2.00in wide, 0.57in tall
+STM32: 3.46in length, 2.97in wide, 0.83in tall
+
+Version 1 Box Dimensions
+Width: 7in
+Length: 6in
+Height: 4in
+USB hole diameter: 0.44in
+Switch hole diameter: 0.24in
+Distance from top to switch hole center: 0.648in (dist. to hole edge: 0.636+(0.24/2))
+
+Version 1 Box Notes:
+USB hole not big enough: Try 0.5in instead
+Gotta do wire organizing
+Can't see LED lights; maybe add a bunch of little holes on the walls?
+Maybe mount lid servo to the wall?
+
+

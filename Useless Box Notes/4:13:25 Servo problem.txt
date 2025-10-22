@@ -1,0 +1,11 @@
+4/13/25 Servo problem observations
+1. From one day to another, with no changes, the servos stopped working
+2. Not hearing clicking when movement requested
+3. Everything functioning as expected except servo is not moving
+4. Battery is still providing juice (able to light an LED with it)
+5. PWM signal wire is still providing signal (able to light an LED with it)
+6. Switched servo out for unused one, still doesn't work
+7. Used different jumper cables, still doesn't work
+
+Potential causes:
+1. 6V 3000mAh battery is slowly running out of juice?
